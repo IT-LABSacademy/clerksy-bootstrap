@@ -31,8 +31,7 @@ h6 {
   font-weight: 600;
 }
 
-ul,
-li {
+ul li {
   list-style: none;
 }
 
@@ -132,4 +131,92 @@ body {
 
 .hero .container .text-content .text {
   padding-top: 20px;
+}
+
+/* Partners */
+.partners {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.partners .site-title {
+  margin-bottom: 60px;
+}
+
+.partners .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Production */
+.production {
+  background: var(--green);
+  padding: 90px 0;
+  text-align: center;
+}
+
+.production .site-title {
+  margin-bottom: 60px;
+}
+
+/* Interest */
+.interest {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.interest .container .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.interest .container .text-content {
+  margin-bottom: 20px;
+}
+
+.interest .container .row .card {
+  width: 353px;
+  box-shadow: 5px 5px 20px 0px #E9E4D5;
+  background: var(--text-color);
+  border-radius: 15px;
+  padding: 50px 40px;
+  text-align: left;
+}
+
+.interest .container .row .card img {
+  height: 72px;
+  object-fit: contain;
+}
+
+.interest .container .row .card h3 {
+  margin: 22px 0;
+  font-size: 28px;
+  color: var(--green);
+}
+
+.interest .container .row .card ul li {
+  font-size: 16px;
+  /* list-style: disc; */
+  color: var(--green);
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interest .container .row .card ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  position: absolute;
+  left: 0;
 }
