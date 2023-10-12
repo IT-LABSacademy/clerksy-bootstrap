@@ -1,3 +1,10 @@
+/* 1122px */
+@media (max-width: 1122px) {
+  .easy .row {
+    justify-content: center;
+  }
+}
+
 /* 1025px */
 @media (max-width: 1025px) {
   .hero .container .image-block img {
@@ -31,8 +38,13 @@
 
   .parts .container .image-block img,
   .human .container .image-block img,
-  .fit .container .image-block img {
+  .fit .container .image-block img,
+  .book .container .image-block img {
     width: 380px;
+  }
+
+  .easy .row {
+    justify-content: center;
   }
 }
 
@@ -62,13 +74,15 @@
 
   .parts .container .row .text-content,
   .human .container .row .text-content,
-  .fit .container .row .text-content {
+  .fit .container .row .text-content,
+  .book .container .image-block img {
     text-align: center;
   }
 
   .parts .container .row .image-block,
   .human .container .row .image-block,
-  .fit .container .image-block {
+  .fit .container .row .image-block,
+  .book .container .row .image-block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +106,21 @@
   .production .row .item:nth-child(2n) {
     margin-top: 25px;
   }
+
+  .easy .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .easy .row .arrow {
+    transform: rotate(90deg);
+  }
+
+  .easy .row .step:last-child::after{
+    display: none;
+  }
 }
 
 /* 430px */
@@ -113,7 +142,8 @@
 
   .human .container .image-block img,
   .parts .container .image-block img,
-  .fit .container .image-block img {
+  .fit .container .image-block img,
+  .book .container .image-block img {
     width: 250px;
   }
 

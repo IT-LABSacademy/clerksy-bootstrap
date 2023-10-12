@@ -84,6 +84,21 @@ body {
   color: var(--green);
 }
 
+.btn{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--light-green);
+  padding: 15px 25px;
+  border-radius: 160px;
+}
+
+.btn.beige{
+  background: var(--beige);
+  color: var(--green);
+}
+
 /* Header */
 .header {
   background: var(--green);
@@ -169,11 +184,7 @@ body {
 }
 
 .interest .container .row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 
 .interest .container .text-content {
@@ -219,4 +230,70 @@ body {
   background: var(--green);
   position: absolute;
   left: 0;
+}
+
+/* Easy */
+.easy {
+  background: var(--beige);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.easy .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 45px 0;
+  gap: 45px;
+}
+
+.easy .row .arrow {
+  width: 75px;
+}
+
+.easy .row .step {
+  width: 262px;
+}
+
+.easy .row .step p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--green);
+  margin-bottom: 13px;
+}
+
+.easy .row .step h3 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Reco', sans-serif;
+  color: var(--green);
+}
+
+.easy .row .step:last-child {
+  position: relative;
+}
+
+.easy .row .step:last-child::after {
+  content: '';
+  width: 290px;
+  height: 185px;
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  z-index: 1000;
+  background-image: url(../images/ring.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Book */
+.book .container .row .text-content{
+  text-align: center;
+}
+
+.book .container .btn{
+  margin-top: 20px;
 }
