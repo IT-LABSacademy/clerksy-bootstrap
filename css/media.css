@@ -22,6 +22,16 @@
   .production .row .item:last-child {
     margin-top: 25px;
   }
+
+  .fit .container .image-block img {
+    width: 450px;
+  }
+
+  .discovery::before,
+  .discovery::after {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* 910px */
@@ -44,6 +54,10 @@
   }
 
   .easy .row {
+    justify-content: center;
+  }
+
+  .footer .footer-bottom {
     justify-content: center;
   }
 }
@@ -99,6 +113,16 @@
   .fit .container .row .text-content {
     margin: 25px 0;
   }
+
+  .discovery::before,
+  .discovery::after {
+    width: 250px;
+    height: 250px;
+  }
+
+  .email .container .row .col-sm-10 {
+    margin-left: auto;
+  }
 }
 
 /* 576px */
@@ -118,8 +142,32 @@
     transform: rotate(90deg);
   }
 
-  .easy .row .step:last-child::after{
+  .easy .row .step:last-child::after {
     display: none;
+  }
+
+  .discovery::before,
+  .discovery::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer .footer-top {
+    justify-content: center;
+  }
+}
+
+/* 440 */
+@media (max-width: 440px) {
+
+  .email .container .row .form .top {
+    background: 0;
+  }
+
+  .email .container .row .form .top input {
+    background: var(--white);
+    border-radius: 160px;
+    margin-bottom: 15px;
   }
 }
 
@@ -156,5 +204,11 @@
   .production .site-title,
   .partners .site-title {
     margin-bottom: 30px;
+  }
+
+  .discovery::before,
+  .discovery::after {
+    width: 150px;
+    height: 150px;
   }
 }
